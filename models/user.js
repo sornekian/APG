@@ -16,7 +16,16 @@ const userSchema = new Schema({
     password: {
       type: String,
       required: true
-    }
+    },
+    cellPhoneNumber: { type: String, required: true },
+    homeAddress: { type: String, required: true },
+    birthDate: { type: Date, required: true },
+    lineOfWork: { type: String, required: true },
+    currentPosition: { type: String, required: true },
+    companyName: { type: String, required: true },
+    undergraduateUniversity: { type: String, required: true },
+    undergraduateMajor: { type: String, required: true },
+    degreeCompletionYear: { type: Number, required: true }
 }, {
     timestamps: true,
     toJSON: {

@@ -1,0 +1,15 @@
+.signup-container {
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    background-color: rgb(204, 202, 209);
+}
+
+button {
+    background-color: black;
+}

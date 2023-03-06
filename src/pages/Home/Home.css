@@ -1,0 +1,12 @@
+body {
+    /* background-color: rgb(50, 61, 71); */
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+.homepage-container {
+    max-width: 50%;
+    margin-left: 25%;
+}
