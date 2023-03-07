@@ -5,14 +5,13 @@ export default function Home() {
         <div className="homepage-container">
             <div className="paragraph">
                 <h1>Our Mission</h1>
-                The Armenian Professional Group was formed in 2022 for the advancement of education and fellowship
+                The Armenian Professional Group was formed in 2020 for the advancement of education and fellowship
                 among Armenians. Since its inception, APG has supported over 300 students of Armenian descent in the
                 United States by granting scholarships to graduate students in a variety of fields.
                 <br />
                 <br />
                 APG has supported education in Armenia by providing grants to:
-                <br />
-                <br />
+                <br /><br />
                 <li>American University of Armenia</li>
                 <li>State Engineering University of Armenia</li>
                 <li>Yerevan State University</li>
@@ -20,7 +19,7 @@ export default function Home() {
                 <li>School of Architecture & Construction at YSU</li>
                 <br />
                 <h1>History of APG</h1>
-                The Armenian Professional Group (APG) was founded in 2022 by Sarven Ornekian, Marco Ruizian, and Charles
+                The Armenian Professional Group (APG) was founded in 2020 by Sarven Ornekian, Marco Ruizian, and Charles
                 Grodian. The organization was established with the aim of promoting fellowship and encouraging young
                 Armenians to pursue higher education.
                 <br />
@@ -32,7 +31,7 @@ export default function Home() {
                 <br />
                 <br />
                 The initial group was small, but it quickly grew as more Armenians became interested in the organization's mission.
-                APG held its first official meeting in January of 2022, which was attended by over 50 people. During this meeting,
+                APG held its first official meeting in January of 2020, which was attended by over 50 people. During this meeting,
                 the founders discussed their vision for the organization and brainstormed ideas for how to achieve their goals.
                 <br />
                 <br />
@@ -65,7 +64,7 @@ export default function Home() {
                 <li>Publishing a Membership Directory with current and new members.</li>
                 <br />
                 <li>Recognizing a Professional of the Year who has provided outstanding service to the Armenian community.</li>
-                <br />
+                <br /><br /><br />
             </div>
         </div>
     )

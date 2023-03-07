@@ -1,12 +1,15 @@
 import './App.css';
+import './footer.css';
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { getUser } from '../../utilities/users-service'
+import { events } from "../../data.js"
 import NavBar from '../../components/NavBar/NavBar'
 import Home from '../Home/Home';
 import AuthPage from '../AuthPage/AuthPage';
-// import NewOrderPage from '../NewOrderPage/NewOrderPage';
-// import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+import EventsPage from '../EventsPage/EventsPage';
+import EventsDetailPage from "../EventsDetailPage/EventsDetailPage";
+
 
 export default function App() {
   const [user, setUser] = useState(getUser())
@@ -19,14 +22,15 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/signup" element={<AuthPage setUser={setUser} />} />
-            {/* <Route path="/orders/new" element={<NewOrderPage />} /> */}
-            {/* <Route path="/orders" element={<OrderHistoryPage />} /> */}
+            <Route path="/events" element={<EventsPage events={events} />} />
+            <Route path="/events/:eventName" element={<EventsDetailPage events={events} />}
+            />
           </Routes>
         </>
 
       }
+      <footer>APG 2020, SarvHye LLC</footer>
     </main>
   );
 }
-
 

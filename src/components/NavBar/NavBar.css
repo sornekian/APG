@@ -1,11 +1,16 @@
 .navbar {
+    height: 50px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 3px 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    min-width: 100%;
+    background-color: #121212;
+    color: white;
+    width: 100%;
+}
+
+nav img {
+    height: 40px;
+    margin-left: 20px;
+
 }
 
 .navbar ul {
@@ -31,7 +36,7 @@
 }
 
 .navbar li a:hover {
-    color: #666;
+    color: #a3a3a3;
 }
 
 .navbar button {
@@ -44,6 +49,11 @@
 
 .navbar a {
     color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+
 }
 
 .navbar a:hover {

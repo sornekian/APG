@@ -1,0 +1,15 @@
+.event-card {
+    border-style: groove;
+    margin: 1vw;
+    /* border-radius: 10px; */
+    border-width: 0.5px;
+    border-color: rgba(150, 150, 150, 0.5);
+    text-align: center;
+    height: 30vh;
+    width: 15vw;
+}
+
+.event-card p {
+    color: white;
+    font-weight: bolder;
+}

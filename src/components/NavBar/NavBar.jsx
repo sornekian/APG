@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
 import './NavBar.css';
+import LogoAPG from '../../assets/images/logo_small.png'
 
 export default function NavBar({ user, setUser }) {
 
@@ -14,15 +15,20 @@ export default function NavBar({ user, setUser }) {
             <ul>
                 {user && user.name}
                 &nbsp;
-                <Link to="/">Home</Link>
+                <Link className='logo' to='/'>
+                    <img src={LogoAPG} alt="logo" /></Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <Link to="/signup">Membership</Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <Link to="/orders/new">Events</Link>
+                <Link to="/events">Events</Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <Link to="/orders">Scholarships</Link>
+                <Link to="/scholarships">Scholarships</Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <button onClick={() => setUser(null)}>Log Out</button>
+                <Link to="/donate">Donations</Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <Link to="/jobboard">Job Board</Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                {/* <button onClick={() => setUser(null)}>Log Out</button> */}
             </ul>
         </nav>
     )
