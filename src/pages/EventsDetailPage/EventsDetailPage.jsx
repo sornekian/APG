@@ -11,7 +11,7 @@ export default function EventDetailPage({ events }) {
             <p>Location - {event.eventLocation}</p>
             <p>Date - {new Date(event.eventDate).toLocaleDateString()}</p>
             <p>Time - {event.eventTime}</p>
-            <p>{event.cast.join(", ")}</p>
+
         </>
     );
 }

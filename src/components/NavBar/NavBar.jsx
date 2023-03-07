@@ -13,12 +13,12 @@ export default function NavBar({ user, setUser }) {
     return (
         <nav className="navbar">
             <ul>
-                {user && user.name}
+                &nbsp;&nbsp;&nbsp;
+                Greetings, {user.name}
                 &nbsp;
                 <Link className='logo' to='/'>
                     <img src={LogoAPG} alt="logo" /></Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <Link to="/signup">Membership</Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <Link to="/events">Events</Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -28,7 +28,10 @@ export default function NavBar({ user, setUser }) {
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <Link to="/jobboard">Job Board</Link>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                {/* <button onClick={() => setUser(null)}>Log Out</button> */}
+                <Link to="/signup">Become a Member</Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <Link to="/login">Member Login</Link>
+                <button onClick={() => setUser(null)}>Log Out</button>
             </ul>
         </nav>
     )

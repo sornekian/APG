@@ -9,6 +9,7 @@ import Home from '../Home/Home';
 import AuthPage from '../AuthPage/AuthPage';
 import EventsPage from '../EventsPage/EventsPage';
 import EventsDetailPage from "../EventsDetailPage/EventsDetailPage";
+import LoginForm from '../../components/LoginForm/LoginForm';
 
 
 export default function App() {
@@ -23,8 +24,8 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/signup" element={<AuthPage setUser={setUser} />} />
             <Route path="/events" element={<EventsPage events={events} />} />
-            <Route path="/events/:eventName" element={<EventsDetailPage events={events} />}
-            />
+            <Route path="/events/:eventName" element={<EventsDetailPage events={events} />} />
+            <Route path="/login" element={<LoginForm setUser={setUser} />} />
           </Routes>
         </>
 

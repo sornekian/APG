@@ -8,15 +8,15 @@ export default function SignUpForm({ setUser }) {
     email: '',
     password: '',
     confirm: '',
-    phone: '',
-    address: '',
-    birthdate: '',
-    lineOfWork: '',
-    currentPosition: '',
-    companyName: '',
-    undergraduateUniversity: '',
-    undergraduateMajor: '',
-    degreeCompletionYear: '',
+    // phone: '',
+    // address: '',
+    // birthdate: '',
+    // lineOfWork: '',
+    // currentPosition: '',
+    // companyName: '',
+    // undergraduateUniversity: '',
+    // undergraduateMajor: '',
+    // degreeCompletionYear: '',
     error: ''
   })
 
@@ -39,15 +39,16 @@ export default function SignUpForm({ setUser }) {
     } catch {
       setFormData({
         ...formData,
-        error: 'Sign Up Failed - Please Complete the Form'
+        error: 'Sign Up Failed - Please Try Again!'
       })
     }
   }
 
   return (
     <div className="signup-container">
+      <h2>Sign Up to Become a Member!</h2>
       <form onSubmit={handleSubmit}>
-        <label>Full Name</label>
+        <label>Name</label>
         <input type="text" name="name" value={formData.name} onChange={handleChange} required />
         <label>Email</label>
         <input type="email" name="email" value={formData.email} onChange={handleChange} required />
@@ -55,7 +56,7 @@ export default function SignUpForm({ setUser }) {
         <input type="password" name="password" value={formData.password} onChange={handleChange} required />
         <label>Confirm Password</label>
         <input type="password" name="confirm" value={formData.confirm} onChange={handleChange} required />
-        <label>Phone Number</label>
+        {/* <label>Phone Number</label>
         <input type="text" name="phone" value={formData.phone} onChange={handleChange} required />
         <label>Home Address</label>
         <input type="text" name="address" value={formData.address} onChange={handleChange} required />
@@ -72,7 +73,7 @@ export default function SignUpForm({ setUser }) {
         <label>Undergraduate Major</label>
         <input type="text" name="undergraduateMajor" value={formData.undergraduateMajor} onChange={handleChange} required />
         <label>Degree Completion Year</label>
-        <input type="text" name="degreeCompletionYear" value={formData.degreeCompletionYear} onChange={handleChange} required />
+        <input type="text" name="degreeCompletionYear" value={formData.degreeCompletionYear} onChange={handleChange} required /> */}
         <button type="submit">SIGN UP</button>
       </form>
       <p className="error-message">&nbsp;{formData.error}</p>

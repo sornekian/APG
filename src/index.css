@@ -24,7 +24,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(191, 191, 192);
-  padding: 2vmin;
   height: 100vh;
 }
 
