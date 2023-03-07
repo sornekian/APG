@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { signUp } from '../../utilities/users-service';
 import './SignUpForm.css';
+import { useNavigate } from "react-router-dom";
+
 
 export default function SignUpForm({ setUser }) {
   const [formData, setFormData] = useState({
@@ -28,6 +30,7 @@ export default function SignUpForm({ setUser }) {
     })
   }
 
+  const navigate = useNavigate();
   async function handleSubmit(evt) {
     evt.preventDefault()
     try {
@@ -36,6 +39,7 @@ export default function SignUpForm({ setUser }) {
       delete formDataCopy.confirm
       const user = await signUp(formDataCopy)
       setUser(user)
+      navigate("/");
     } catch {
       setFormData({
         ...formData,

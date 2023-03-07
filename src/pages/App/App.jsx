@@ -10,6 +10,8 @@ import AuthPage from '../AuthPage/AuthPage';
 import EventsPage from '../EventsPage/EventsPage';
 import EventsDetailPage from "../EventsDetailPage/EventsDetailPage";
 import LoginForm from '../../components/LoginForm/LoginForm';
+import Scholarships from '../Scholarships/Scholarships';
+import Donations from '../Donations/Donations';
 
 
 export default function App() {
@@ -18,17 +20,21 @@ export default function App() {
   return (
     <main className="App">
       {
-        <>
-          <NavBar user={user} setUser={setUser} />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/signup" element={<AuthPage setUser={setUser} />} />
-            <Route path="/events" element={<EventsPage events={events} />} />
-            <Route path="/events/:eventName" element={<EventsDetailPage events={events} />} />
-            <Route path="/login" element={<LoginForm setUser={setUser} />} />
-          </Routes>
-        </>
-
+        user ?
+          <>
+            <NavBar user={user} setUser={setUser} />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/signup" element={<AuthPage setUser={setUser} />} />
+              <Route path="/events" element={<EventsPage events={events} />} />
+              <Route path="/events/:eventName" element={<EventsDetailPage events={events} />} />
+              <Route path="/scholarships" element={<Scholarships />} />
+              <Route path="/donate" element={<Donations />} />
+              <Route path="/login" element={<LoginForm setUser={setUser} />} />
+            </Routes>
+          </>
+          :
+          <AuthPage setUser={setUser} />
       }
       <footer>APG 2020, SarvHye LLC</footer>
     </main>
