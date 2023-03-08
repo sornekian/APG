@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import NewsItem from '../NewsItem/NewItem';
 
 export default function NewsList() {
@@ -19,20 +18,18 @@ export default function NewsList() {
 
     return (
         <div>
+            <h1>Business News Across America</h1>
             {articles && articles.length > 0 ? (
-                articles.map(article => {
-                    return (
-                        <NewsItem
-                            title={article.title}
-                            description={article.description}
-                            url={article.url}
-                            urlToImage={article.urlToImage}
-                        />
-                    );
-                })
-            ) : (
-                <p>You've reached your limit! Go out and Network!</p>
-            )}
+                articles.map((article, idx) => (
+                    <NewsItem
+                        article={article}
+                        key={idx}
+                    />
+                ))
+            )
+                : (
+                    <p>You've reached your limit! Go out and Network!</p>
+                )}
         </div>
     );
 }

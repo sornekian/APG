@@ -28,6 +28,7 @@ export default function App() {
               <Route path="/events" element={<EventsPage events={events} />} />
               <Route path="/events/:eventName" element={<EventsDetailPage events={events} />} />
               <Route path="/news" element={<NewsList />} />
+              <Route path="/scholarships" element={<Scholarships />} />
               <Route path="/jobs" element={<JobBoard />} />
               <Route path="/*" element={<Navigate to="/" />} />
             </Routes>
@@ -38,12 +39,14 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/scholarships" element={<Scholarships />} />
+              <Route path="/events" element={<AuthPage setUser={setUser} />} />
+              <Route path="/events/:eventName" element={<AuthPage setUser={setUser} />} />
+              <Route path="/news" element={<AuthPage setUser={setUser} />} />
+              <Route path="/jobs" element={<AuthPage setUser={setUser} />} />
               <Route path="/signup" element={<AuthPage setUser={setUser} />} />
               <Route path="/login" element={<LoginForm setUser={setUser} />} />
             </Routes>
           </>
-        // :
-        // <AuthPage setUser={setUser} />
       }
 
       <footer>APG 2020, SarvHye LLC</footer>

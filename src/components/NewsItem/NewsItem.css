@@ -1,0 +1,30 @@
+.news-app {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.news-item {
+    width: 950px;
+    padding: 20px;
+    border: 1px;
+    border-style: ridge;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: white;
+}
+
+.news-img {
+    width: 720px;
+}
+
+.news-description {
+    font-style: italic;
+    font-size: 19px;
+}
+
+.news-author {
+    font-size: 13px;
+}

@@ -4,8 +4,8 @@ export default function Scholarships() {
     return (
         <div className="scholar-container">
             <h1>APG Scholarship Recipients</h1>
-            &nbsp;
-            <div class="scholar-container">
+
+            <div className="scholar-container">
                 <h2>2022 Recipients</h2>
                 <h4>Yana Avanesyan</h4>
                 <p>Southwestern Law School &nbsp;|&nbsp; Law</p>
@@ -21,9 +21,7 @@ export default function Scholarships() {
                 <p>Harvard &nbsp;|&nbsp; Law</p>
                 <h4>Hayk Mkhitaryan</h4>
                 <p>USC &nbsp;|&nbsp; Business Analytics</p>
-                <br />
                 <hr />
-                <br />
                 <h2>2021 Recipients</h2>
                 <h4>Arman Asryan</h4>
                 <p>Southwestern Law School &nbsp;|&nbsp; Law</p>
@@ -39,9 +37,7 @@ export default function Scholarships() {
                 <p>Yale &nbsp;|&nbsp; Environmental Science</p>
                 <h4>Tereza Yerimyan</h4>
                 <p>Georgetown &nbsp;|&nbsp; Business Administration</p>
-                <br />
                 <hr />
-                <br />
                 <h2>2020 Recipients</h2>
                 <h4>Shant Charoian</h4>
                 <p>Harvard &nbsp;|&nbsp; Architecture</p>

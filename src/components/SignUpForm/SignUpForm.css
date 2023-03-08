@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 input {
@@ -13,4 +13,20 @@ input {
 
 button {
     background-color: black;
+}
+
+.member-benefits {
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    text-align: center;
+}
+
+.member-benefits h5 {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.member-benfits p {
+    font-size: 15px;
+    display: flex;
 }

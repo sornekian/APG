@@ -60,26 +60,19 @@ export default function SignUpForm({ setUser }) {
         <input type="password" name="password" value={formData.password} onChange={handleChange} required />
         <label>Confirm Password</label>
         <input type="password" name="confirm" value={formData.confirm} onChange={handleChange} required />
-        {/* <label>Phone Number</label>
-        <input type="text" name="phone" value={formData.phone} onChange={handleChange} required />
-        <label>Home Address</label>
-        <input type="text" name="address" value={formData.address} onChange={handleChange} required />
-        <label>Date of Birth</label>
-        <input type="date" name="birthdate" value={formData.birthdate} onChange={handleChange} required />
-        <label>Line of Work</label>
-        <input type="text" name="lineOfWork" value={formData.lineOfWork} onChange={handleChange} required />
-        <label>Current Position</label>
-        <input type="text" name="currentPosition" value={formData.currentPosition} onChange={handleChange} required />
-        <label>Company Name</label>
-        <input type="text" name="companyName" value={formData.companyName} onChange={handleChange} required />
-        <label>Undergraduate University</label>
-        <input type="text" name="undergraduateUniversity" value={formData.undergraduateUniversity} onChange={handleChange} required />
-        <label>Undergraduate Major</label>
-        <input type="text" name="undergraduateMajor" value={formData.undergraduateMajor} onChange={handleChange} required />
-        <label>Degree Completion Year</label>
-        <input type="text" name="degreeCompletionYear" value={formData.degreeCompletionYear} onChange={handleChange} required /> */}
         <button type="submit">SIGN UP</button>
       </form>
+      <div className="member-benefits">
+        <h5>Membership benefits</h5>
+        <p>180+ Professional Members and Young Professionals</p>
+        <p>Professional Networking</p>
+        <p>Social Networking</p>
+        <p>Annual “Membership Directory”</p>
+        <p>Newsletters</p>
+        <p>Complimentary Events | Exclusive Members-Only Events</p>
+        <p>Reduced Rates on Events Open to General Public</p>
+        <p>Lifelong Friendships</p>
+      </div>
       <p className="error-message">&nbsp;{formData.error}</p>
     </div>
   )
