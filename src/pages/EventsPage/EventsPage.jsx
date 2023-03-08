@@ -11,7 +11,6 @@ export default function EventPage({ events }) {
                 {events.map((event, idx) => (
                     <Link to={`/events/${event.title}`}>
                         <div>
-
                             <EventCard event={event} key={idx} index={idx} />
                         </div>
                     </Link>
