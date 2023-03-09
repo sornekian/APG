@@ -5,8 +5,9 @@
     margin-right: 10%;
 }
 
-h2 {
+.event-title {
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
 }

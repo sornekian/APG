@@ -10,15 +10,6 @@ export default function SignUpForm({ setUser }) {
     email: '',
     password: '',
     confirm: '',
-    // phone: '',
-    // address: '',
-    // birthdate: '',
-    // lineOfWork: '',
-    // currentPosition: '',
-    // companyName: '',
-    // undergraduateUniversity: '',
-    // undergraduateMajor: '',
-    // degreeCompletionYear: '',
     error: ''
   })
 

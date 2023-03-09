@@ -12,7 +12,7 @@ import EventsDetailPage from "../EventsDetailPage/EventsDetailPage";
 import LoginForm from '../../components/LoginForm/LoginForm';
 import Scholarships from '../Scholarships/Scholarships';
 import NewsList from '../../components/NewList/NewList';
-import JobBoard from '../JobBoard/JobBoard';
+import JobForm from '../JobForm/JobForm';
 
 export default function App() {
   const [user, setUser] = useState(getUser())
@@ -29,7 +29,7 @@ export default function App() {
               <Route path="/events/:eventName" element={<EventsDetailPage events={events} />} />
               <Route path="/news" element={<NewsList />} />
               <Route path="/scholarships" element={<Scholarships />} />
-              <Route path="/jobs" element={<JobBoard />} />
+              <Route path="/jobs" element={<JobForm />} />
               <Route path="/*" element={<Navigate to="/" />} />
             </Routes>
           </>

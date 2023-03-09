@@ -6,24 +6,23 @@ import "../../components/EventCard/EventCard.css";
 
 
 export default function EventPage({ events }) {
+    const showEvents = events.length > 0;
 
     return (
         <>
-            <div>
-                <h2>APG Events</h2>
+            <h2 className="event-title">APG Events</h2>
+            {showEvents && (
                 <div className="event-list">
                     {events.map((event, idx) => (
                         <Link to={`/events/${event.title}`} key={idx}>
-                            <div>
+                            <div className="event-card-wrapper">
                                 <EventCard event={event} index={idx} />
                             </div>
                         </Link>
                     ))}
                 </div>
-            </div>
-            : (
-            <SignUpForm />
-            )
+            )}
+            {!showEvents && <p>No events found.</p>}
         </>
     );
 }
