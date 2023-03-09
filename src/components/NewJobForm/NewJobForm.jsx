@@ -42,6 +42,7 @@ export default function NewJobForm({ user, setJobs }) {
             console.log(err)
         }
     }
+
     return (
         <div>
             <h3>Create a New Job!</h3>
@@ -55,7 +56,7 @@ export default function NewJobForm({ user, setJobs }) {
                 <label>Years of Experience Required</label>
                 <input type="text" name="yrsOfExp" value={newJobs.yrsOfExp} onChange={handleChange} required />
                 <label>Company Contact Email</label>
-                <input type="text" name="email" value={newJobs.email} onChange={handleChange} required />
+                <input type="email" name="email" value={newJobs.email} onChange={handleChange} required />
                 <button type="submit">Create New Job</button>
             </form>
         </div>

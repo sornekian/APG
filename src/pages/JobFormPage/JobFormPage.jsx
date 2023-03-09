@@ -8,7 +8,6 @@ export default function JobsPage({ user }) {
 
     useEffect(() => {
         async function getAllJobs() {
-
             const jobs = await getJobs();
             setJobs(jobs);
 
@@ -16,19 +15,24 @@ export default function JobsPage({ user }) {
         getAllJobs();
     }, []);
 
+    async function handleJobDelete(jobId) {
+        const jobs = await getJobs();
+        setJobs(jobs);
+    }
+
     return (
         <div>
-            <NewJobForm user={user} setJobs={setJobs} />
-            {jobs.length > 0 ? (
+            {jobs ? (
                 <>
                     <h2>Available Jobs</h2>
                     {jobs.map((job, idx) => (
-                        <JobCard job={job} key={idx} />
+                        <JobCard job={job} key={idx} handleJobDelete={handleJobDelete} />
                     ))}
                 </>
             ) : (
                 <h2>No Jobs Yet!</h2>
             )}
+            <NewJobForm user={user} setJobs={setJobs} />
         </div>
     );
 }
