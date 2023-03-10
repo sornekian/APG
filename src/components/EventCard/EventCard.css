@@ -1,7 +1,7 @@
 .event-card {
     border-style: groove;
     margin: 1vw;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     border-width: 0.5px;
     border-color: rgba(150, 150, 150, 0.5);
     text-align: center;
@@ -12,4 +12,8 @@
 .event-card p {
     color: white;
     font-weight: bolder;
+}
+
+img {
+    margin-top: 8%;
 }

@@ -9,7 +9,7 @@ module.exports = {
 
 async function index(req, res) {
     const userId = req.user._id;
-    const jobs = await Job.find({ user: userId });
+    const jobs = await Job.find({});
     res.json(jobs);
 }
 async function create(req, res) {
@@ -33,6 +33,7 @@ async function create(req, res) {
 }
 
 async function deleteJob(req, res) {
+    console.log("in delete controller")
     try {
         const deletedJob = await Job.findByIdAndDelete(req.params.id);
         if (!deletedJob) {
