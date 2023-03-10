@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import './EventsDetailPage.css'
 
 export default function EventDetailPage({ events }) {
     const { eventName } = useParams();
@@ -8,10 +9,11 @@ export default function EventDetailPage({ events }) {
         <>
             <img src={event.posterPath} alt="" />
             <h2>{event.title}</h2>
-            <p>Location - {event.eventLocation}</p>
-            <p>Date - {new Date(event.eventDate).toLocaleDateString()}</p>
-            <p>Time - {event.eventTime}</p>
-
+            <div className="event-details">
+                <p>Location - {event.eventLocation}</p>
+                <p>Date - {new Date(event.eventDate).toLocaleDateString()}</p>
+                <p>Time - {event.eventTime}</p>
+            </div>
         </>
     );
 }

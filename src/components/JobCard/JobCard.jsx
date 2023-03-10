@@ -1,4 +1,5 @@
 import { deleteJob } from "../../utilities/jobs-api";
+import './JobCard.css';
 
 export default function JobCard({ job, user, handleJobDelete }) {
 
@@ -17,7 +18,7 @@ export default function JobCard({ job, user, handleJobDelete }) {
     }
 
     return (
-        <div>
+        <div className="postedjob-container">
             <h3>Date: {new Date(job.createdAt).toLocaleString()}</h3>
             <p>Name of Company: {job.companyName}</p>
             <p>Line of Work: {job.lineOfWork}</p>
