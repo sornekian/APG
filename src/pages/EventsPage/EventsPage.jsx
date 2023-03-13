@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import EventCard from "../../components/EventCard/EventCard";
-import SignUpForm from "../../components/SignUpForm/SignUpForm";
 import "./EventsPage.css";
 import "../../components/EventCard/EventCard.css";
 

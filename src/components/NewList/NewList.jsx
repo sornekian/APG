@@ -11,18 +11,9 @@ export default function NewsList() {
         async function getArticles() {
 
             const response = await getNews()
-            console.log(response)
             setArticles(response.articles)
 
         }
-
-        // const getArticles = async () => {
-        //     const response = await fetch(
-        //         `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${KEY}`);
-        //     const data = await response.json();
-        //     console.log(data)
-        //     setArticles(data.articles);
-        // };
 
         getArticles();
     }, []);

@@ -5,7 +5,6 @@ module.exports = {
 }
 
 async function index(req, res) {
-    console.log(process.env.REACT_APP_NEWSAPI_API_KEY)
     const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${process.env.REACT_APP_NEWSAPI_API_KEY}`);
     const data = await response.json()    
     res.json(data)
