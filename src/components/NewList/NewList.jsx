@@ -6,7 +6,6 @@ export default function NewsList() {
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
-        const KEY = process.env.REACT_APP_NEWSAPI_API_KEY;
 
         async function getArticles() {
 
