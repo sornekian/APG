@@ -7,14 +7,14 @@ This application is designed as a networking tool to support ongoing scholarship
 Please use think link to view a deployed version of this repo: https://apg.herokuapp.com/
 
 <br />
-**Technologies Used:**
+**Technologies Used**
 <br />
  - React<br />   
  - MongoDB/Mongoose<br />   
  - Express<br />   
  - Node.js<br />   
 <br />
-*Incoming Icebox Features:*
+*Incoming Icebox Features*
 <br />
 + Overall responsive design<br />  
 + User Profiles<br />   
