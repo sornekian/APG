@@ -9,14 +9,14 @@ Please use think link to view a deployed version of this repo: https://apg.herok
 <br />
 **Technologies Used:**
 <br />
- - React
- - MongoDB/Mongoose
- - Express
- - Node.js
+ - React   
+ - MongoDB/Mongoose   
+ - Express   
+ - Node.js   
 <br />
 *Incoming Icebox Features:*
 <br />
-+ Overall responsive design
-+ User Profiles
-+ Stripe API (for donations)
-+ Night mode
++ Overall responsive design  
++ User Profiles   
++ Stripe API (for donations)   
++ Night mode   
