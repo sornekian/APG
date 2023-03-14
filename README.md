@@ -12,13 +12,10 @@ This application is designed as a networking tool to support ongoing scholarship
  - MongoDB/Mongoose
  - Express
  - Node.js
-<br />
+
 *Incoming Icebox Features:*
 
-*- Overall responsive design*
-
-*- User Profiles*
-
-*- Stripe API (for donations)*
-
-*- Night mode*
+* - Overall responsive design*
+* - User Profiles*
+* - Stripe API (for donations)*
+* - Night mode*
