@@ -21,6 +21,7 @@ nav img {
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
 }
 
 .navbar li {
@@ -66,3 +67,42 @@ nav img {
 .navbar button:hover {
     color: #666;
 }
+
+@media (max-width: 768px) {
+    .navbar .menu-items {
+      display: none;
+    }
+  
+    .navbar .menu-items.show {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #121212;
+      z-index: 1;
+    }
+  
+    .navbar .menu-items-mobile {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .navbar .menu-items-mobile.show {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .navbar .hamburger-menu {
+      font-size: 24px;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .navbar .menu-items-mobile {
+      display: none;
+    }
+  }
