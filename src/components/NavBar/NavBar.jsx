@@ -4,7 +4,6 @@ import './NavBar.css';
 import LogoAPG from '../../assets/images/logo_small.png'
 import React, { useState } from 'react';
 
-
 export default function NavBar({ user, setUser }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
