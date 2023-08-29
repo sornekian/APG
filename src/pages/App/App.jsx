@@ -13,11 +13,13 @@ import LoginForm from '../../components/LoginForm/LoginForm';
 import Scholarships from '../Scholarships/Scholarships';
 import NewsList from '../../components/NewList/NewList';
 import JobFormPage from '../JobFormPage/JobFormPage';
+import { MobileMenuProvider } from '../../MobileMenuContext';
 
 export default function App() {
   const [user, setUser] = useState(getUser())
 
   return (
+    <MobileMenuProvider>
     <main className="App">
       {
         user ?
@@ -51,5 +53,6 @@ export default function App() {
 
       <footer>APG 2020, SarvHye LLC</footer>
     </main>
+    </MobileMenuProvider>
   );
 }

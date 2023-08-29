@@ -2,19 +2,17 @@ import { Link } from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
 import './NavBar.css';
 import LogoAPG from '../../assets/images/logo_small.png'
-import React, { useState } from 'react';
+import React from 'react';
+import { useMobileMenu } from '../../MobileMenuContext';
 
 export default function NavBar({ user, setUser }) {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { isMobileMenuOpen, toggleMobileMenu } = useMobileMenu();
 
     function handleLogOut() {
         userService.logOut()
         setUser(null)
     }
-    function toggleMobileMenu() {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-      }
-      
+
       return (
         <nav className="navbar">
           <ul className={`menu-items ${isMobileMenuOpen ? 'show' : ''}`}>
