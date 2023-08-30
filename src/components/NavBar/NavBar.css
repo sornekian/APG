@@ -22,6 +22,7 @@ nav img {
     margin: 0;
     padding: 0;
     justify-content: space-between;
+    
 }
 
 .navbar li {
@@ -100,7 +101,7 @@ nav img {
     .navbar .hamburger-menu {
       font-size: 24px;
       cursor: pointer;
-      margin-right: 20px;
+      justify-content: center;
     }
   
     /* Style the rest of your menu items */
@@ -109,6 +110,9 @@ nav img {
       text-decoration: none;
       padding: 1rem;
     }
+  }
+  .navbar ul {
+    opacity: 70%;
   }
   @media (min-width: 769px) {
     .navbar .menu-items-mobile {
