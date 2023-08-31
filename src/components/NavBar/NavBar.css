@@ -62,11 +62,11 @@ nav img {
 }
 
 .navbar a:hover {
-    color: #666;
+    color: #ff0000;
 }
 
 .navbar button:hover {
-    color: #666;
+    color: #ff0000;
 }
 
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
@@ -112,7 +112,7 @@ nav img {
     }
   }
   .navbar ul {
-    opacity: 70%;
+    opacity: 65%;
   }
   @media (min-width: 769px) {
     .navbar .menu-items-mobile {
