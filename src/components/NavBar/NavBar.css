@@ -2,7 +2,7 @@
     height: 50px;
     display: flex;
     justify-content: space-between;
-    background-color: #121212;
+    background-color: black;
     color: white;
     width: 100%;
     top: 0;
@@ -41,7 +41,7 @@ nav img {
 }
 
 .navbar li a:hover {
-    color: #a3a3a3;
+    color: #e01f1f;
 }
 
 .navbar button {

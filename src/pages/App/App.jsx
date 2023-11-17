@@ -43,7 +43,7 @@ export default function App() {
               <Route path="/scholarships" element={<Scholarships />} />
               <Route path="/events" element={<AuthPage setUser={setUser} />} />
               <Route path="/events/:eventName" element={<AuthPage setUser={setUser} />} />
-              <Route path="/news" element={<AuthPage setUser={setUser} />} />
+              <Route path="/news" element={<NewsList />} />
               <Route path="/jobs" element={<AuthPage setUser={setUser} />} />
               <Route path="/signup" element={<AuthPage setUser={setUser} />} />
               <Route path="/login" element={<LoginForm setUser={setUser} />} />
